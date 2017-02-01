@@ -1,4 +1,4 @@
-package com.jigsaw;
+package com.newWordCount;
 
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Reducer;

@@ -1,4 +1,4 @@
-package com.jigsaw;
+package com.newWordCount;
 
 import java.io.IOException;
 
