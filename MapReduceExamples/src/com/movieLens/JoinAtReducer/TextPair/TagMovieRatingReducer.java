@@ -14,10 +14,10 @@ class TagMovieRatingReducer extends Reducer<TextPair, Text, Text, IntWritable> {
 		Iterator<Text> iter = values.iterator();
 		Text movName = new Text(iter.next());
 		//System.out.println("Key is : " + key);
-		
 		//System.out.println("movine name is : " + movName);
 		
 		while(iter.hasNext()){
+			//System.out.println(iter.next());
 			count+=Integer.parseInt(iter.next().toString());
 		}
 		

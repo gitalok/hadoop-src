@@ -8,9 +8,10 @@ public class CustomComparator extends WritableComparator {
 	private static final Text.Comparator TEXT_COMPARATOR = new Text.Comparator();
 	
 	public CustomComparator() {
-		super(TextPair.class);
+		super(TextPair.class, true);
 	}
 
+	/*
 	@Override
 	public int compare(byte[] b1, int s1, int l1,
 			byte[] b2, int s2, int l2) {
@@ -22,7 +23,7 @@ public class CustomComparator extends WritableComparator {
 			throw new IllegalArgumentException(e);
 		}
 	}
-	
+	*/
 	@Override
 	public int compare(WritableComparable a, WritableComparable b) {
 		if (a instanceof TextPair && b instanceof TextPair) {
@@ -30,4 +31,5 @@ public class CustomComparator extends WritableComparator {
 		}
 		return super.compare(a, b);
 	}
+	
 }

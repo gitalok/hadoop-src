@@ -50,10 +50,11 @@ public class TextPair implements WritableComparable<TextPair> {
 		second.readFields(in);
 	}
 
+	/*
 	@Override
 	public int hashCode() {
 		return first.hashCode() * 163 + second.hashCode();
-	}
+	}*/
 	
 	@Override
 	public boolean equals(Object o) {
@@ -77,17 +78,5 @@ public class TextPair implements WritableComparable<TextPair> {
 		}
 		return second.compareTo(tp.second);
 	}
-
-	/*@Override
-	public void readFields(DataInput arg0) throws IOException {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
-	public void write(DataOutput arg0) throws IOException {
-		// TODO Auto-generated method stub
-		
-	}*/
 
 }
